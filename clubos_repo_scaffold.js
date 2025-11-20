@@ -1,17 +1,22 @@
 // Root Monorepo: ClubOS
 
 clubos/
-├── README.md
-├── package.json               // Root config (scripts, dev tools)
-├── .env                      // Shared environment variables
+├── README.md                 // Project goals + structure overview
+├── package.json              // Root config (scripts, dev tools, monorepo setup)
+├── .env.example              // Shared secrets template
 ├── docker-compose.yml        // Local dev environment (Postgres, Redis, etc.)
 ├── prisma/                   // Shared schema if using Prisma for DB
 │   └── schema.prisma
+├── docs/
+│   ├── architecture.md       // Current system vision
+│   ├── api-spec.md
+│   └── integration-playbook.md
 ├── apps/
 │   ├── admin-dashboard/      // React (Vite or Next.js) + Tailwind
 │   │   ├── public/
 │   │   ├── src/
 │   │   │   ├── pages/
+│   │   │   │   └── index.tsx // Dashboard landing page
 │   │   │   ├── components/
 │   │   │   ├── hooks/
 │   │   │   └── api/           // Frontend-side fetch logic
@@ -57,7 +62,3 @@ clubos/
 │       ├── sample-products.ts
 ├── scripts/
 │   └── migrate.sh
-└── docs/
-    ├── architecture.md
-    ├── api-spec.md
-    └── integration-playbook.md
