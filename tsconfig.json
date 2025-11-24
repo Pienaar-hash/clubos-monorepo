@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@clubos/shared-lib": ["packages/shared-lib/src"]
+    }
+  },
+  "files": [],
+  "references": [
+    { "path": "packages/shared-lib" },
+    { "path": "packages/service-a" }
+  ]
+}
