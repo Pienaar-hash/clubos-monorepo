@@ -1,0 +1,17 @@
+{
+  "name": "@clubos/service-a",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -b",
+    "start": "node dist/index.js",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@clubos/shared-lib": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^18.17.0",
+    "typescript": "^5.2.0"
+  }
+}
